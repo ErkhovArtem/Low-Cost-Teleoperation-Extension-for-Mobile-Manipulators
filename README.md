@@ -1,3 +1,9 @@
+## Overview
+
+This repo contains code and other supplementary materials for the paper [Low-Cost Teleoperation Extension for Mobile Manipulators](https://arxiv.org/abs/2603.07672) presented on **The 21st ACM/IEEE International Conference on Human-Robot Interaction** Workshop.
+
+Teleoperation of mobile bimanual manipulators requires simultaneous control of high-dimensional systems, often necessitating expensive specialized equipment. We present an open-source teleoperation framework that enables intuitive whole body control using readily available commodity hardware. Our system combines smartphone-based head tracking for camera control, leader arms for bilateral manipulation, and foot pedals for hands-free base navigation. Using a standard smartphone with IMU and display, we eliminate the need for costly VR helmets while maintaining immersive visual feedback. The modular architecture integrates seamlessly with the XLeRobot framework, but can be easily adapted to other types of mobile manipulators. We validate our approach through user studies that demonstrate improved task performance and reduced cognitive load compared to keyboard-based control.
+
 ## Demo
 
 ![Demo](demo.gif)
@@ -149,3 +155,20 @@ python teleop/xlerobot_teleoperate.py --use-keyboard
 - `a` / `d`: Head motor 1 left/right
 - `n` / `m`: Speed up/down
 - `b`: Quit teleoperation
+
+
+## Citation
+
+Please cite the following if you found our work useful:
+
+```
+@article{belov2026lowcostteleoperationextensionmobile,
+      title={Low-Cost Teleoperation Extension for Mobile Manipulators}, 
+      author={Danil Belov and Artem Erkhov and Yaroslav Savotin and Tatiana Podladchikova and Pavel Osinenko and Dzmitry Tsetserukou},
+      year={2026},
+      eprint={2603.07672},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2603.07672}, 
+}
+```
